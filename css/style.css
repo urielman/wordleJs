@@ -140,6 +140,13 @@ main {
   margin: .5rem 0;
 }
 
+.victory {
+  background-color: rgb(106, 199, 106) !important;
+}
+
+.defeat {
+  background-color: #fc8888 !important;
+}
 .info__header {
   display: flex;
   justify-content: end;
@@ -268,7 +275,7 @@ a.btn {
   background-color: var(--color-btn1)
 }
 
-#btnCloseWinners {
+#btnCloseWinners, #btnCloseHistory {
   font-size: 15px;
 }
 .mainMenu {
@@ -307,6 +314,17 @@ a.btn {
   position: absolute
 }
 
+.btnSort {
+  width: 300px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.sortActive {
+  background-color: rgb(129, 188, 156);
+}
 @media (max-width: 600px) {
   .keyboard {
     width: 100%;
