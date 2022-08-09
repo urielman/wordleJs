@@ -4,18 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <title>Contacto</title>
     <link rel="shortcut icon" type="image/jpg" href="/"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
         <div class="navbarItem"><a href="/">Jugar</a></div>
         <div class="navbarItem active"><a href="contact.html">Contacto</a></div>
-        <div class="navbarItem"><a href="ganadores.html">Ganadores</a></div>
-    </div>
+        <div class="navbarItem">
+          <a href="https://github.com/urielman/wordleJs" target="_blank">Repositorio</a>
+        </div>
+      </div>
     <div class="page">
-        <button>Jugar</button>
+      <form id="frmContact" class="contactModal">
+        <h1 class="h1">Contacto</h1>
+        <div class="form-control">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" data-rules="required">
+          <div class="error">
+            <p class="errorMessage"></p>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Correo electrónico</label>
+          <input type="email" name="email" id="email" data-rules="required,type: email">
+          <div class="error">
+            <p class="errorMessage"></p>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="message">Mensaje</label>
+          <textarea name="message" id="message" data-rules="minlength: 5"></textarea>
+          <div class="error">
+            <p class="errorMessage"></p>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <button type="submit" title="Enviar" class="btn btnPlay">Enviar</button>
+        </div>
+      </form>
     </div>
+    <script src="./js/contact.js" type="module"></script>
 </body>
 </html>
