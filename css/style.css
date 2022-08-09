@@ -6,6 +6,7 @@
   --color-background: white;
   --color-btn1: rgb(64, 114, 207);
   --color-btn2: rgb(28, 76, 165);
+  --color-btn3: rgb(73, 168, 112);
 }
 
 html, main {
@@ -247,6 +248,9 @@ a.btn {
   transition: all 0.3s;
 }
 
+.btnWinners {
+  background-color: var(--color-btn3);
+}
 .paddingBottom {
   margin-bottom: 10px;
   margin-top: 10px;
